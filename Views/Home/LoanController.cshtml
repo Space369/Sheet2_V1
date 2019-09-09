@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "LoanController";
+}
+
+<h2>LoanController</h2>
+
+
+<form action="/Home/LoanController" method="Post">
+
+
+    Number of years:
+    <input type="number" name="years" id="years" />
+    <br />
+    Amount of investment:
+    <input type="number" name="amount" id="amount" step=".01" />
+    <br />
+    Interest rate:
+    <input type="number" name="rate" id="rate" step=".01" />
+
+    <br />
+    <input type="submit" value="Submit" />
+
+</form>
+
+<div>
+    <p>Given @ViewData["Years"] years, an investment of @ViewData["Amount"], and an annual rate of @ViewData["Rate"]%, you will have @ViewData["Total"]</p>
+    <p></p>
+
+</div>
